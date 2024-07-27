@@ -41,7 +41,7 @@ header div h1 {
     font-size: 4rem;
     color: #ece2d0;
 }
-@media (max-width:900px) {
+@media (max-width:800px) {
     header {
         background-position: center;
     }
@@ -77,10 +77,6 @@ color: #5f2c52;
     display: flex;
     flex-wrap: wrap;    
 }
-@media (max-width:900px){
-    .principal {
-        flex-direction: column;
-    }
 }
 aside {
     flex-basis: 25%;
@@ -88,28 +84,32 @@ aside {
     padding: 10px;
     text-align: center;
 }
-image img {
-    width: 90%;
-    height: auto;
-    object-fit:cover ;
-    transition: 0.5s all ease-in-out;
-}
-
-.image:hover img {
-    transform: scale(1.06);
-}
-@media (max-width:900px){
-    .images img {
-        width: 60%;
-        height: auto;
-    }
-}
 main {
     flex-basis: 75%;
     background-color: white ;
     padding: 20px;
     padding-left: 40px;
 }
+@media (max-width:800px) {
+  .principal {
+    flex-direction: column;
+  /* ESTILOS ASIDE */
+  }image img {
+    width: 80%;
+    height: auto;
+    object-fit:cover ;
+    transition: 0.5s all ease-in-out;
+}
+.image:hover img {
+    transform: scale(1.06);
+}
+@media (max-width:800px){
+    .images img {
+        width: 60%;
+        height: auto;
+    }
+}
+
 main h2 {
     text-transform: uppercase;
     margin-top: 10px;
